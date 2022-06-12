@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+ Categories of post, based on {{ taxonomy.name }}
+</h1>
+<ul>
+  {% for term in terms  %}
+  <li><a href="{{ term.permalink | safe }}">{{ term.name }}</a></li>
+  {% endfor %}
+</ul>
+<p> Go back to the <a href="{{ get_url(path="@/_index.md") }}">homepage.</a>
+{% endblock content %}

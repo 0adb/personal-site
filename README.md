@@ -1,0 +1,1 @@
+Source for my personal website, powered by Vincent Prouillet and contributors' [Zola](https://getzola.org).
